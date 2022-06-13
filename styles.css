@@ -1,0 +1,174 @@
+body{
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+header,footer{
+  text-align: center;
+  padding: 10px 0;
+  background-color: black;
+  color: white;
+}
+
+header{
+  background-image: linear-gradient(to bottom right, rgb(243, 243, 174), yellow) !important;
+  color: black;
+}
+
+h1,h2,h3,h4,h5,p,ul{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(238, 247, 156);
+}
+
+li{
+  list-style-type: none;
+}
+
+.main-div{
+  background-image: linear-gradient(to bottom,rgb(2, 255, 167),rgb(255, 255, 255));
+}
+
+.navbar{
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(45deg,rgb(65, 65, 177) 50%,rgb(98, 158, 207) 50%);
+
+}
+
+.navbar-brand{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand h3{
+  color: white;
+}
+
+.navbar-list{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item{
+  margin: 0 10px;
+}
+
+.grid-container{
+  margin: 20px 50px;
+  display: grid;
+  height: auto;
+}
+
+
+.grid-item:nth-child(1){
+  grid-column: 2 span;
+  display: flex;
+  align-items: center;
+}
+
+.flex-item{
+  width: 50%;
+  margin: 10px;
+}
+
+table,th,td{
+  border:1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.flex-item h1,.flex-item h2{
+  margin: 10px 0;
+}
+
+.flex-item h2 {
+  color: rgb(129, 74, 115);
+}
+
+.flex-item p{
+  color: red;
+}
+
+.grid-item:nth-child(2),.grid-item:nth-child(3){
+  margin: 50px 20px;
+  width: 50%;
+  text-align: center;
+}
+
+input{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid black;
+  transition: border 0.5s ease;
+}
+
+input:focus{
+  border-bottom: 2px solid blue;
+  outline: none;
+}
+
+.submit-button{
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: rgb(47, 112, 112);
+  color: white;
+  border: 2px solid black;
+  transition: background 0.5s ease-in;
+  font-size: 14px;
+}
+
+.submit-button:hover{
+  background-color: blue;
+}
+
+.grid-item:nth-child(3) h3 {
+  margin-top: 20px;
+}
+
+button{
+  cursor: pointer;
+}
+
+#click-button{
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  margin: 30px;
+  background-color: rgb(255, 237, 71);
+  border: 2px solid rgb(255, 68, 68);
+  font-weight: 800;
+  color: black;
+  transition: all 0.1s linear;
+}
+
+#click-button:hover{
+  background-color: rgb(75, 247, 59);
+  border: 2px solid rgb(247, 66, 66);
+  color: white;
+}
+
+.disabled{
+  opacity: 0.5;
+  cursor: default;
+}
+
+.display-none{
+  display: none;
+}
+
+#success-msg{
+  color: green;
+  font-weight: 800;
+}
